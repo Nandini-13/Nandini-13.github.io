@@ -1,0 +1,429 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0);
+    z-index: 900;
+    transition: 0.5s;
+}
+nav.white {
+    background-color: white;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509);
+    height: 60px;
+}
+nav .logo {
+    float: left;
+    color: white;
+    margin: 5px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180%;
+
+
+}
+nav.white .logo {
+    float: left;
+    color: black;
+}
+label #btn,
+#cancel {
+    color: white;
+    line-height: 50px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+nav.white #cancel{
+    color: black;
+    
+}
+nav.white #btn{
+    color: black;
+    
+}
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    line-height: 60px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: .5s;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.links{
+    font-weight: 700;
+}
+nav.white ul li a{
+    color: black;
+    line-height: 40px;
+}
+.links:hover{
+    color: #4cc9f0;
+    transition: 0s;
+}
+nav.white .links:hover{
+    color: #032bad;
+    transition: 0s;
+
+}
+#home{
+    
+    background-image: url(me.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.4);
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+#content {
+    z-index: 2;
+}
+.heads {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-size: 200%;
+    color: white;
+}
+.heads h2 span {
+    color: #48cae4;
+}
+#about{
+  
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  padding: 4%;
+  padding-left: 0.2% !important;
+}
+#pic {
+    padding-top: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 12vh;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.312);
+    margin: 4%;
+    margin-left: 1% !important;
+    display: inline-block;
+    width: fit-content;
+}
+#write {
+    width: 50vw;
+    /* border: 2px solid black; */
+    padding: 1%;
+    display: inline-block;
+    text-align: left;
+}
+#write h2{
+    color: #0c3196;
+}
+a{
+    text-decoration: none !important;
+    color: initial;
+}
+#skill{
+    background-color: #1d1b1b;
+    color: white;
+    height: max-content;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: inline-block;
+
+}
+.skill-card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: inline-block;
+    margin: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.253);
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+    transition: 1s ease-in-out;
+}
+.skill-card .front{
+    background: #312d2d;
+    color: white;
+}
+.skill-card:hover .front{
+    transform: perspective(500px) rotateY(180deg);   
+}
+.skill-card .back{
+    background: #29a0c4;
+    color: #000000;
+    transform: perspective(500px) rotateY(180deg);
+}
+.skill-card:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.face h1{
+    transform: perspective(500px) translateZ(50px);
+}
+#text{
+    width: 50vw;
+}
+#work{
+    height: max-content;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: inline-block;
+
+}
+#contact{
+    background-color: rgb(240, 240, 240);
+    height: max-content;
+    padding: 8%;
+    display: inline-block;
+    width: 100%;
+}
+.boxed{
+    background-color: white;
+    border-radius: 5%;
+    padding: 2%;
+    display: inline-block;
+    width: 22%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+    margin-left: 0% !important;
+}
+.boxed:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px;
+    transition-duration: 0.4s;
+}
+.boxed img{
+    width: 26%;
+    margin-top: 5%;
+}
+@media screen and (max-width: 480px){
+    #contact h1{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 950px){
+    
+    label #btn {
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:#29a0c4;        
+        top: 60px;
+        left: -100%;
+        display: block !important;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li a {
+        color: black;
+        font-size: x-large;
+        line-height: 21vh;
+    }
+    nav ul li a:hover {
+        color: white !important;
+    }
+    nav.white ul li a {
+        line-height: 21vh;
+    }
+    nav.white ul li a:hover{
+        color: white !important;
+    }
+    nav.white ul {
+        top: 60px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    .boxed{
+        width: 35%;
+        border-radius: 0%;
+    }
+    .boxed img{
+        width: 26%;
+    }
+    .skill-card{
+        width: 60%;
+        margin-top: 10%;
+    }
+    .skill-card:hover .front{
+        transform: perspective(500px) rotateX(180deg);   
+    }
+    .skill-card .back{
+        
+        transform: perspective(500px) rotateX(180deg);
+    }
+    .skill-card:hover .back{
+        transform: perspective(500px) rotateX(360deg);
+    }
+    #go {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:900px){
+    #write{
+        width: 80%;
+        text-align: justify;
+    }
+    
+    
+}
+@media screen and (max-width:600px){
+    #name{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#foot{
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 5%;
+    
+    z-index: 10;
+}
+@media screen and (max-width: 750px){
+    .boxed{
+        width: 80%;
+    }
+    .boxed img{
+        width: 16%;
+    }
+}
+#go {
+    background-color: white;
+    /* padding: 1%; */
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    position: fixed;
+    border-radius: 10%;
+    width: fit-content;
+    height: min-content;
+    bottom: 1vh;
+    right: 1vw;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    width: 480px;
+    height: 480px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(207, 207, 207);
+    padding-bottom: 0%;
+  }
+@media screen and (max-width:550px){
+    .swiper-slide{
+        width: 300px;
+        font-size: smaller;
+        height: 300px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}  
+
+  .swiper-slide p{
+      padding: 3%; 
+      background-color: white; 
+      color: black; 
+      font-weight: 900;
+      bottom: 0 !important;
+      position: absolute;  
+  }
+.swiper-button-next{
+    color: black;
+    font-weight: 900;
+    border:1px solid black;
+    padding: 1%;
+    /* box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4); */
+    background-color: rgb(255, 255, 255);
+
+}
+.swiper-button-prev{
+    color: black;
+    font-weight: 900;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    border:1px solid black;
+    /* box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4); */
+
+}
+.swiper-pagination{
+    cursor: pointer;
+}

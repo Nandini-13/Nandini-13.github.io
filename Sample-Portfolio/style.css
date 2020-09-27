@@ -230,7 +230,7 @@ a{
     height: max-content;
     padding: 8%;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
 }
 .boxed{
     background-color: white;
@@ -265,7 +265,7 @@ a{
     }
     nav ul{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-color:#29a0c4;        
         top: 60px;

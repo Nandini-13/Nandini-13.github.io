@@ -347,8 +347,8 @@ a{
     color: white;
     bottom: 0;
     width: 100vw;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     z-index: 10;
 }
 @media screen and (max-width: 750px){

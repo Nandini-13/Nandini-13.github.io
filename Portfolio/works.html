@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/426856ac5f.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('white');
+            }
+            else{
+                $('nav').removeClass('white');
+            }
+        })
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        function hideMenu(){
+        let menuOpen = document.querySelector('#check').checked;
+
+        if(menuOpen = true){
+            document.querySelector('#check').checked = false;
+        }
+        }
+        window.addEventListener("scroll", hideMenu);
+
+    </script>
+<title>G.Nandini | Personal Website</title>
+</head>
+<body>
+<div id="work">
+        <center>
+            <h1 style="color: rgb(22, 22, 22);font-size: 300%;">
+            Works
+            </h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(314\).png); background-size: contain; 
+                  background-repeat: no-repeat;">
+                  <a href='Portfolio/organiziva' target='_blank'>
+                     
+                     <p>
+                    <strong><u>Organiziva</u>(Team Project)</strong><br>     
+                    A remote collaboration tool that was built for the Hackathon of the Robotronics Event 2020. 
+                    </p></a>
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(315\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a href='Portfolio/xplore' target='_blank'>
+                     
+                        <p>
+                       <strong><u>X-Plore</u>(Team Project)</strong><br>     
+                       A travel website built for the Exquisite event of XINO's Symposium 2020. 
+                       </p></a>
+                </div>
+                <div class="swiper-slide" style="background-image: url(meej.png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="https://aniketagarwal21.github.io/hypertext/">                     
+                        <p>
+                      <strong><u>R2D2</u>(Team Project)</strong><br>     
+                       A website built for promotion of the R2D2 droid for the Hypertext event of ProjectBeta 5.0 
+                       </p></a> 
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(319\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="http://35.226.79.185:8080/">
+                     
+                        <p>
+                      <strong><u>ImmiRent</u>(Team Project)</strong><br>     
+                       A website built to help immigrants in finding tenements for the Byte Hacks 2020. 
+                       </p></a> 
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(318\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="http://spacemytrip.netlify.app">
+                     
+                        <p>
+                      <strong><u>SpaceMyTrip</u>(Solo)</strong><br>     
+                       A website built for space travel for the Web Design Event of Quarantech 2020. 
+                       </p></a> 
+                </div>
+                  <!-- <div class="swiper-slide" style="background-image: url(one.png);
+                  background-size: contain;   background-repeat: no-repeat;"></div>
+                   -->
+                </div>
+                
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->   
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+           
+              </div>        
+        </center>
+    </div>
+     <!-- FOOTER -->
+    <div id="foot"><center>
+        Made with <i class="fas fa-heart"></i> by G.Nandini</center>        
+    </div>
+    <!-- FOOTER ENDS -->
+  <script>
+        AOS.init({once: true});
+      </script>
+    <!-- <script src="../package/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        spaceBetween: 50,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    
+</body>
+</html>

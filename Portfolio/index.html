@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/426856ac5f.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('white');
+            }
+            else{
+                $('nav').removeClass('white');
+            }
+        })
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        function hideMenu(){
+        let menuOpen = document.querySelector('#check').checked;
+
+        if(menuOpen = true){
+            document.querySelector('#check').checked = false;
+        }
+        }
+        window.addEventListener("scroll", hideMenu);
+
+    </script>
+<title>G.Nandini | Personal Website</title>
+</head>
+<body>
+    
+    <div id="loading"></div>
+    
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo" >
+          G.NANDINI
+        </h1>
+        <input type="checkbox" id="check">
+      <label for="check" >
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+         <ul>
+            
+            <li> <a class="links" href="#about">About</a> </li>
+            <li> <a class="links" href="#skill">Skills</a> </li>
+            <li> <a class="links" href="#work">Works</a> </li>
+            <li> <a class="links" href="#social">Contact</a> </li>
+            
+        </ul>
+    </nav>
+
+    
+    
+    <!-- END OF NAVBAR -->
+
+    <!-- HOME SECTION -->
+    <div id="home">
+    </div>
+    <div id="content">
+    <div class="heads">
+        <h1 id="name">Hi! My name is G.Nandini</h1>
+        <h2 style="font-size: xx-large;">I am <span class="anim"></span> </h2>
+        
+    </div></div>
+    <!-- HOME SECTION ENDS -->
+
+    <!-- ABOUT SECTION  -->
+    <div id="about">
+        <center>
+        <div id="pic">
+            <img  src="about_image.jpg" data-aos="fade-right" alt="can't load" height="300">
+        </div>
+        <div id="write">
+            <h1>About Me</h1>
+            <h2>I am a student of SRM IST, Ghaziabad.</h2>
+            <div>
+            <p style="font-weight: bold;">
+            I'm a computer science engineering student currently exploring for new opportunities to learn and grow. 
+                I have some experience working in front end development. <br> Being part of my school's computer club, 
+                I have participated and secured a place on the podium in a few interschool coding competitions. 
+                It made me learn how to work and collaborate in a team under a strict time deadline. <br>
+            </p>
+            <p style="font-weight: bold;">
+            I hope to learn from my peers and seniors in the STEM field and look forward to making new connections.<br>
+            I am also an avid reader and my hobbies include playing chess, sketching and painting.<br>
+            
+            </p>
+            
+            
+
+            
+        </div>
+        </div></center>
+    </div>
+    <!-- ABOUT SECTION ENDS -->
+
+<!-- SKILLS SECTION -->
+<div id="skill">
+    <center>
+    <h1 style="color: white; font-size: 300%;"><strong style="color: #3abce4;"> Skill</strong>-Set</h1>
+    
+    <div data-aos="fade-up" class="skill-card">
+        <div class="face front">            
+            <!-- <img src="king.png" alt="logo" style="padding: 6px;" width="50" height="50"> -->
+            <h2 style="font-size: 150%;">Academic</h2>
+        </div>
+        <div class="face back">
+            <div class="bordering">
+                <!-- <H1>SKILL 1</H1> -->
+                <p>Participated and earned recognition in school and competitive exams like olympiads.</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="transition-delay: 0.1s;" class="skill-card">
+        <div class="face front">
+            <!-- <img src="queen.png" alt="logo" style="padding: 6px;" width="50" height="50"> -->
+            <h2 style="font-size: 150%;">Extra-Curricular</h2>
+        </div>
+        <div class="face back">
+            <div class="bordering">
+            <!-- <H1>SKILL 2</H1> -->
+            <p>Participated in various competitions.</p>
+            <p>Essay writing, painting, web development, language based play.</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="transition-delay: 0.2s;" class="skill-card">
+        <div class="face front">
+            <!-- <img src="castle.png" alt="logo" style="padding: 6px;" width="50" height="50"> -->
+            <h2 style="font-size: 150%;">Qualities</h2>
+        </div>
+        <div class="face back">
+            <div class="bordering">
+            <!-- <H1>SKILL 3</H1> -->
+            <p>Passionate about science</p>
+            <p>A team leader and a team player</p>
+            <p>Competitive and eager to learn</p>            
+            
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" style="transition-delay: 0.3s;" class="skill-card">
+        <div class="face front">
+            <!-- <img src="horse.png" alt="logo" style="padding: 6px;" width="50" height="50"> -->
+            <h2 style="font-size: 150%;">Personality</h2>
+        </div>
+        <div class="face back">
+            <div class="bordering">
+            <!-- <H1>SKILL 4</H1> -->
+            <p>Level-headed under pressure</p>
+            <p>Dedicated to my beliefs</p>
+            <p>Willing to connect with peers</p>
+            </div>
+        </div>
+    </div>
+
+</center>
+</div>
+<!-- SKILLS SECTION ENDS -->
+
+<!-- WORKS SECTION -->
+    <div id="work">
+        <center>
+            <h1 style="color: rgb(22, 22, 22);font-size: 300%;">
+            Works
+            </h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(314\).png); background-size: contain; 
+                  background-repeat: no-repeat;">
+                  <a href='/organiziva' target='_blank'>
+                     
+                     <p>
+                    <strong><u>Organiziva</u>(Team Project)</strong><br>     
+                    A remote collaboration tool that was built for the Hackathon of the Robotronics Event 2020. 
+                    </p></a>
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(315\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a href='/xplore' target='_blank'>
+                     
+                        <p>
+                       <strong><u>X-Plore</u>(Team Project)</strong><br>     
+                       A travel website built for the Exquisite event of XINO's Symposium 2020. 
+                       </p></a>
+                </div>
+                <div class="swiper-slide" style="background-image: url(meej.png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="https://aniketagarwal21.github.io/hypertext/">                     
+                        <p>
+                      <strong><u>R2D2</u>(Team Project)</strong><br>     
+                       A website built for promotion of the R2D2 droid for the Hypertext event of ProjectBeta 5.0 
+                       </p></a> 
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(319\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="http://35.226.79.185:8080/">
+                     
+                        <p>
+                      <strong><u>ImmiRent</u>(Team Project)</strong><br>     
+                       A website built to help immigrants in finding tenements for the Byte Hacks 2020. 
+                       </p></a> 
+                </div>
+                  <div class="swiper-slide" style="background-image: url(Screenshot\ \(318\).png);
+                  background-size: contain;   background-repeat: no-repeat;">
+                    <a target="_blank" href="http://spacemytrip.netlify.app">
+                     
+                        <p>
+                      <strong><u>SpaceMyTrip</u>(Solo)</strong><br>     
+                       A website built for space travel for the Web Design Event of Quarantech 2020. 
+                       </p></a> 
+                </div>
+                  <!-- <div class="swiper-slide" style="background-image: url(one.png);
+                  background-size: contain;   background-repeat: no-repeat;"></div>
+                   -->
+                </div>
+                
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->   
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+           
+              </div>        
+        </center>
+    </div>
+    <!-- WORKS SECTION ENDS -->
+
+    <!-- CONTACT SECTION -->
+    
+    <div id="social" class="max-width">
+       <center><h1 style="font-size: 260%;">Connect With Me</h1></center> 
+        <section style="display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between; height: max-content; ">
+            <div data-aos="fade-right" class="calcu" style="font-weight: bold;">
+
+                <p>Thank you for checking out my portfolio. If you have any queries, drop a message.
+                    You can connect with me through the below platforms as well.
+                </p><br>
+                <div class="allcon">
+                    <div class="conlink">
+                        <img src="linkedin.png" style="height: 50px;" alt="LINKEDIN LOGO">
+                    <a href="https://linkedin.com/in/nandini-gangadharan" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">LinkedIn</b>  
+                            <br>Nandini Gangadharan</p>
+                    </a></div>
+                    <div class="conlink">
+                        <img src="github.png" style="height: 50px;" alt="GITHUB LOGO">
+                    <a href="https://github.com/Nandini-13" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">GitHub</b>  
+                            <br>@Nandini-13</p>
+                    </a>
+                    </div>
+                    <div class="conlink">
+                        <img src="twitter.png" style="height: 50px;" alt="TWITTER LOGO">
+                    <a href="https://twitter.com/gnandini13" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">Twitter</b> 
+                            <br>@gnandini13</p>
+                    </a></div></div>
+                    
+            </div>
+                <form data-aos="fade-left" class="calcu" target="_blank" action="https://formsubmit.co/96718eb242e65fcd68d9ba29074e55c4" method="POST">
+                <!-- <h2>Write me a message</h2> -->
+                  <div class="form-group">
+                    <div class="form-row" style="display: flex; flex-direction:row;">
+                      
+                        <input style="width:100%;" type="text" name="name" class="form-control"  placeholder="Full Name" required>
+                      
+                        <input style="width:100%;" type="email" name="email" class="form-control"  placeholder="Email Address" required>
+                  
+                    </div>
+                    <div class="form-row">
+                    <input style="width:95%;" type="text" name="subject" class="form-control"  placeholder="Subject" required><br>
+                    <textarea style="width:95%;" placeholder="Your Message" class="form-control" name="message" rows="7" required></textarea>
+                </div>
+                </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Send Message</button>
+                  <input type="hidden" name="_template" value="table">
+                </form>
+        </section></div>
+    
+    <!-- CONTACT SECTION ENDS -->
+
+    <!-- GO TO TOP BUTTON -->
+    <a href="#home">
+        <div id="go">
+        <i class="fas fa-angle-up" style="font-size: 36px; color: black;"></i>
+        </div>
+    </a> 
+    <!-- GO TO TOP BUTTON END -->
+
+    <!-- FOOTER -->
+    <div id="foot"><center>
+        Made with <i class="fas fa-heart"></i> by G.Nandini</center>        
+    </div>
+    <!-- FOOTER ENDS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('.anim', {
+          strings:["a Space Enthusiast","a Front-End Developer","an Avid Reader", "a Droid Lover"],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true
+        });
+      </script>
+      <script>
+        AOS.init({once: true});
+      </script>
+    
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        spaceBetween: 50,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        input,textarea,button {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 12px;
+            margin-right: 10px;
+            border: 1px solid #48cae4;
+            border-radius: 4px;
+            padding: 12px 12px;
+            outline: none !important;
+        }
+        /* input{
+            width: 300px;          
+            outline: none !important;
+        } */
+        button{
+            box-shadow: inset 0 0 0 0 white;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+            color: black;            
+            font-family: 'Montserrat', sans-serif;
+            outline: none !important;
+            border: 2px solid #48cae4;
+            background-color: #48cae4;
+            font-size: medium;
+            cursor: pointer;
+            padding: 8px 8px !important;
+        }
+        button:hover{
+            box-shadow: inset 0 0 0 30px white;
+
+        }
+        /* form{
+            width: min-content;
+            border: 1px solid blue;
+        } */
+        .calcu{
+            width: calc(50% - 30px);
+            /* border: 1px solid red; */
+        }
+        @media screen and (max-width: 970px){
+            .calcu{
+                width: 40vw;
+            }
+        }
+        .max-width {
+            max-width: 1300px;
+            padding: 0 80px;
+            margin: auto;
+            /* border: 1px solid green; */
+        }
+        .conlink{
+            display: flex;height: 65px; align-items: center; width: max-content; margin-bottom: 20px;
+        }
+        .conlink a{
+            margin-left:15px;
+        }
+    </style>
+</head>
+<body>
+<div class="max-width">
+<section style="display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between; height: max-content; ">
+    <div class="calcu">
+        <h2>Get in Touch</h2>
+        <p>Thank you for checking out my portfolio, if you have any queries drop your message.
+            You can connect with me through the below platforms as well.
+        </p><br>
+            <div class="conlink">
+                <img src="linkedin.png" style="height: 50px;" alt="LINKEDIN LOGO">
+            <a href="https://linkedin.com/in/nandini-gangadharan" target="_blank" rel="noopener noreferrer">
+                <p> <b style="font-size:larger; color: #032bad;">LinkedIn</b>  
+                    <br>Nandini Gangadharan</p>
+            </a></div>
+            <div class="conlink">
+                <img src="github.png" style="height: 50px;" alt="GITHUB LOGO">
+            <a href="https://github.com/Nandini-13" target="_blank" rel="noopener noreferrer">
+                <p> <b style="font-size:larger; color: #032bad;">GitHub</b>  
+                    <br>@Nandini-13</p>
+            </a>
+            </div>
+            <div class="conlink">
+                <img src="twitter.png" style="height: 50px;" alt="TWITTER LOGO">
+            <a href="https://twitter.com/gnandini13" target="_blank" rel="noopener noreferrer">
+                <p> <b style="font-size:larger; color: #032bad;">Twitter</b> 
+                    <br>@gnandini13</p>
+            </a></div>
+            
+    </div>
+        <form class="calcu" target="_blank" action="https://formsubmit.co/nandinigangadharan13@gmail.com" method="POST">
+        <h2>Write me a message</h2>
+          <div class="form-group">
+            <div class="form-row" style="display: flex; flex-direction:row;">
+              
+                <input style="width:100%;" type="text" name="name" class="form-control"  placeholder="Full Name" required>
+              
+                <input style="width:100%;" type="email" name="email" class="form-control"  placeholder="Email Address" required>
+          
+            </div>
+            <div class="form-row">
+            <input style="width:100%;" type="text" name="subject" class="form-control"  placeholder="Subject" required><br>
+            <textarea style="width:100%;" placeholder="Your Message" class="form-control" name="message" rows="7" required></textarea>
+        </div>
+        </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+          <input type="hidden" name="_template" value="table">
+        </form>
+</section></div>
+</body>
+</html>

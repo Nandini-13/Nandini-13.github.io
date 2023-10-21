@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/426856ac5f.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        $('nav').removeClass('white');
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        function hideMenu(){
+        let menuOpen = document.querySelector('#check').checked;
+
+        if(menuOpen = true){
+            document.querySelector('#check').checked = false;
+        }
+        }
+        window.addEventListener("scroll", hideMenu);
+
+    </script>
+<title>G.Nandini | Personal Website</title>
+</head>
+<body>
+<div id="loading"></div>
+    
+    <div id="social" class="max-width">
+       <center><h1 style="font-size: 260%;">Connect With Me</h1></center> 
+        <section style="display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between; height: max-content; ">
+            <div data-aos="fade-right" class="calcu" style="font-weight: bold;">
+
+                <p>Thank you for checking out my portfolio. If you have any queries, drop a message.
+                    You can connect with me through the below platforms as well.
+                </p><br>
+                <div class="allcon">
+                    <div class="conlink">
+                        <img src="linkedin.png" style="height: 50px;" alt="LINKEDIN LOGO">
+                    <a href="https://linkedin.com/in/nandini-gangadharan" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">LinkedIn</b>  
+                            <br>Nandini Gangadharan</p>
+                    </a></div>
+                    <div class="conlink">
+                        <img src="github.png" style="height: 50px;" alt="GITHUB LOGO">
+                    <a href="https://github.com/Nandini-13" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">GitHub</b>  
+                            <br>@Nandini-13</p>
+                    </a>
+                    </div>
+                    <div class="conlink">
+                        <img src="twitter.png" style="height: 50px;" alt="TWITTER LOGO">
+                    <a href="https://twitter.com/gnandini13" target="_blank" rel="noopener noreferrer">
+                        <p style="font-weight: 100 !important; color: #032bad;"> <b style="font-size:larger; color: black;">Twitter</b> 
+                            <br>@gnandini13</p>
+                    </a></div></div>
+                    
+            </div>
+                <form data-aos="fade-left" class="calcu" target="_blank" action="https://formsubmit.co/96718eb242e65fcd68d9ba29074e55c4" method="POST">
+                <!-- <h2>Write me a message</h2> -->
+                  <div class="form-group">
+                    <div class="form-row" style="display: flex; flex-direction:row;">
+                      
+                        <input style="width:100%;" type="text" name="name" class="form-control"  placeholder="Full Name" required>
+                      
+                        <input style="width:100%;" type="email" name="email" class="form-control"  placeholder="Email Address" required>
+                  
+                    </div>
+                    <div class="form-row">
+                    <input style="width:95%;" type="text" name="subject" class="form-control"  placeholder="Subject" required><br>
+                    <textarea style="width:95%;" placeholder="Your Message" class="form-control" name="message" rows="7" required></textarea>
+                </div>
+                </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Send Message</button>
+                  <input type="hidden" name="_template" value="table">
+                </form>
+        </section></div>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+        AOS.init({once: true});
+      </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>    
+</body>
+</html>

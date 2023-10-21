@@ -221,9 +221,9 @@ a{
         display: none;
         visibility: hidden;
     }
-    
-}
-@media screen and (max-width:950px){
+    #work{
+        padding-top:10%;
+    }
     #write{
         width: 80%;
         text-align: justify;

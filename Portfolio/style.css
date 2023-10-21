@@ -149,7 +149,6 @@ nav.white #btn{
 #write {
     width: 50vw;
     font-size: 100%;
-    /* border: 2px solid black; */
     padding: 1%;
     display: inline-block;
     text-align: left;
@@ -161,76 +160,13 @@ a{
     text-decoration: none !important;
     color: initial;
 }
-#skill{
-    background-color: #1d1b1b;
-    color: white;
-    height: max-content;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: inline-block;
-
-}
-.skill-card{
-    position: relative;
-    width: 200px;
-    height: 300px;
-    transform-style: preserve-3d;
-    display: inline-block;
-    margin: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-.face {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.406);
-    transform-style: preserve-3d;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    transform: perspective(500px) rotateY(0deg);
-    transition: 1s ease-in-out;
-}
-.skill-card .front{
-    background: #221f1f;
-    color: white;
-}
-.skill-card:hover .front{
-    transform: perspective(500px) rotateY(180deg);   
-}
-.skill-card .back{
-    background: #221f1f;
-    color: whitesmoke;
-    transform: perspective(500px) rotateY(180deg);
-}
-.bordering{
-    padding: 30% 15%;
-    
-}
-.skill-card:hover .back{
-    transform: perspective(500px) rotateY(360deg);
-}
-
-.face h2{
-    color: white;
-    text-shadow: 2px 2px black
-}
 #text{
     width: 50vw;
 }
 #work{
     height: max-content;
-    background-color: #1d1b1b;
-    color: white;
-    height: max-content;
-    /*background-color: white;
-    color: black;*/
+    background-color: white;
+    color: black;
     width: 100%;
     padding-top: 5%;
     display: inline-block;
@@ -330,20 +266,6 @@ a{
     z-index: 10;
 }
 @media screen and (max-width: 510px){
-    .skill-card{
-        width: 45%;
-        margin-top: 10%;
-    }
-    .skill-card:hover .front{
-        transform: perspective(500px) rotateX(180deg);   
-    }
-    .skill-card .back{
-        
-        transform: perspective(500px) rotateX(180deg);
-    }
-    .skill-card:hover .back{
-        transform: perspective(500px) rotateX(360deg);
-    }
     .logo{
         margin: 0;
         left: 0;

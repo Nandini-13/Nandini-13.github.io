@@ -225,7 +225,7 @@ a{
     width: 50vw;
 }
 #work{
-    height: max-content;
+    height: 95vh;
     background-color: white;
     color: black;
     width: 100%;
@@ -366,7 +366,6 @@ a{
 }
 #go {
     background-color: white;
-    /* padding: 1%; */
     padding-left: 0.7%;
     padding-right: 0.7%;
     box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
@@ -438,11 +437,9 @@ a{
 .swiper-pagination{
     cursor: pointer;
 }
-.vid{
-    
+.vid{    
     box-shadow: 0px 0px 16px 3px rgb(168, 168, 168);
     top: 1px;
-    
 }
 
 #loading {
@@ -484,7 +481,6 @@ button:hover{
 
 .calcu{
     width: calc(50% - 30px);
-    /* border: 1px solid red; */
 }
 @media screen and (max-width: 970px){
     .calcu{
@@ -509,7 +505,6 @@ button:hover{
     max-width: 1300px;
     padding: 5% 80px;
     margin: auto;
-    /* border: 1px solid green; */
 }
 .conlink{
     display: flex;height: 65px; align-items: center; width: max-content; margin-bottom: 20px;

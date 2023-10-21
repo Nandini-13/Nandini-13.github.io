@@ -16,6 +16,23 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('white');
+            }
+            else{
+                $('nav').removeClass('white');
+            }
+        })
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
         function hideMenu(){
         let menuOpen = document.querySelector('#check').checked;
 
@@ -29,6 +46,30 @@
 <title>G.Nandini | Personal Website</title>
 </head>
 <body>
+<div id="loading"></div>
+    
+    <!-- NAVBAR -->
+    <nav>
+        <h1 class="logo"> <a href="Portfolio/index">
+          G.NANDINI
+        </a>
+        </h1>
+        <input type="checkbox" id="check">
+      <label for="check" >
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+         <ul>
+            
+            <li> <a class="links" href="#about">About</a> </li>
+            <li> <a class="links" href="#skill">Skills</a> </li>
+            <li> <a class="links" href="Portfolio/works">Works</a> </li>
+            <li> <a class="links" href="#social">Contact</a> </li>
+            
+        </ul>
+    </nav>  
+    
+    <!-- END OF NAVBAR -->
 <div id="work">
         <center>
             <h1 style="color: rgb(22, 22, 22);font-size: 300%;">
@@ -95,6 +136,7 @@
               </div>        
         </center>
     </div>
+    <br><br>
      <!-- FOOTER -->
     <div id="foot"><center>
         Made with <i class="fas fa-heart"></i> by G.Nandini</center>        

@@ -16,14 +16,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
-        $(window).on('scroll', function(){
-            if($(window).scrollTop()){
-                $('nav').addClass('white');
-            }
-            else{
-                $('nav').removeClass('white');
-            }
-        })
+        $('nav').removeClass('white');
         document.onreadystatechange = function() {
             if (document.readyState !== "complete") {
                 document.querySelector("body").style.visibility = "hidden";
@@ -82,7 +75,7 @@
 <div id="work">
         <center>
             <h1 style="color: rgb(22, 22, 22);font-size: 300%;">
-            Works
+            Projects
             </h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">

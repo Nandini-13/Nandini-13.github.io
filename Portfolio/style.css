@@ -148,7 +148,7 @@ nav.white #btn{
 }
 #write {
     width: 50vw;
-    font-size: 120%;
+    font-size: 110%;
     padding: 1%;
     display: inline-block;
     text-align: left;
@@ -264,8 +264,8 @@ a{
     color: white;
     bottom: 0;
     width: 100%;
-    padding-top: 3%;  
-    padding-bottom: 3%;   
+    padding-top: 2%;  
+    padding-bottom: 2%;   
     z-index: 10;
 }
 @media screen and (max-width: 510px){
@@ -283,10 +283,12 @@ a{
     }
 }
 @media screen and (max-width: 750px){
-    
+    #social{
+        padding-top:10%;
+    }
     #foot{        
-        padding-top: 5%;    
-        padding-bottom: 5%; 
+        padding-top: 4%;    
+        padding-bottom: 4%; 
     }
 }
 #go {

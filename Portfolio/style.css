@@ -133,7 +133,7 @@ nav.white #btn{
     color: #48cae4;
 }
 #about{
-  
+  height: max-content;
   background-color: white;
   width: 100%;
   display: inline-block;
@@ -148,7 +148,7 @@ nav.white #btn{
 }
 #write {
     width: 50vw;
-    font-size: 100%;
+    font-size: 120%;
     padding: 1%;
     display: inline-block;
     text-align: left;
@@ -229,6 +229,7 @@ a{
     #write{
         width: 80%;
         text-align: justify;
+        font-size: 100%;
     }
 }
 
@@ -277,11 +278,8 @@ a{
     }
 }
 @media screen and (max-width: 430px){
-    label #btn{
-        display: none;
-    }
-    label #cancel{
-        display: none;
+    .logo{
+        display:none;
     }
 }
 @media screen and (max-width: 750px){

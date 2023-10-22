@@ -278,8 +278,8 @@ a{
     }
 }
 @media screen and (max-width: 430px){
-    .logo{
-        display:none;
+    nav{
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 750px){

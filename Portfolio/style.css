@@ -279,7 +279,8 @@ a{
 }
 @media screen and (max-width: 430px){
     nav{
-        padding-left: 10px;
+        padding: 10px 20px;
+        
     }
 }
 @media screen and (max-width: 750px){

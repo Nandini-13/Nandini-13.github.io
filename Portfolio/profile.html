@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/426856ac5f.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        $('nav').removeClass('white');
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+        function hideMenu(){
+        let menuOpen = document.querySelector('#check').checked;
+
+        if(menuOpen = true){
+            document.querySelector('#check').checked = false;
+        }
+        }
+        window.addEventListener("scroll", hideMenu);
+    </script>
+<title>G.Nandini | Personal Website</title>
+</head>
+<body>
+<div id="loading"></div>
+    
+    <!-- NAVBAR -->
+    <nav class="white">
+        <h1 class="logo"> <a href="index.html">
+          G.NANDINI
+        </a>
+        </h1>
+        <input type="checkbox" id="check">
+      <label for="check" >
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+         <ul>
+            
+            <li> <a class="links" href="profile.html">Profile</a> </li>
+            <li> <a class="links" href="skills.html">Skills & Experience</a> </li>
+            <li> <a class="links" href="works.html">Projects</a> </li>
+            <li> <a class="links" href="contact.html">Contact</a> </li>
+            
+        </ul>
+    </nav>  
+    
+    <!-- END OF NAVBAR -->
+<div class="work">
+    <center>
+        <h1 style="color: rgb(22,22,22);font-size: 300%;">
+        Profile
+        </h1>
+    <section>
+    <div class="left" data-aos="fade-right">
+        <h2>About</h2>
+        I'm a computer science engineering student with prior experience working in front end development.
+        Being part of my school's computer club, I have participated and secured a place on the podium in a few interschool 
+        coding competitions. <br>
+        I have also earned recognition in competitive exams like olympiads
+        and displayed versatility by taking part and securing winning positions in competitions of diverse fields like 
+        Essay writing, Painting, Web development, Language based play. <br>
+
+    </div>
+    <div class="right" data-aos="fade-left">
+        <h2>Skills</h2>
+        <strong>Technical: </strong>
+        Proficient in HTML, CSS, Python. C++ Beginner. Basic knowledge of SQL.<br>
+        <hr style="border-color: #48cae4 !important;">
+        <strong>Soft:</strong>
+        Leadership and management skills. Level-headed under pressure. Effective communicator. Adaptable.<br>
+        <hr style="border-color: #48cae4 !important;">
+        <strong>Languages: </strong>
+        English, Hindi, Tamil
+        <hr style="border-color: #48cae4 !important;">
+    </div>
+    </section>
+    <section>
+        <div class="left" data-aos="fade-right">
+            <h2>Education</h2>
+        </div>
+        <div class="right" data-aos="fade-left">
+            <h2>Achievements</h2>
+        </div>
+    </section>
+    </center>
+    
+</div>
+ <!-- FOOTER -->
+ <div id="foot"><center>
+    Copyright &copy; 2023 G.Nandini </center>     
+</div>
+<!-- FOOTER ENDS -->   
+<script>
+    AOS.init({once: true});
+  </script>
+</body>
+</html>

@@ -163,14 +163,14 @@ a{
 #text{
     width: 50vw;
 }
-#work{
+.work{
     height: max-content;
     background-color: white;
     color: black;
     width: 100%;
     padding-top: 5%;
     display: inline-block;
-
+    padding-bottom: 3%;
 }
 #social{
     padding-top:6%;
@@ -223,7 +223,7 @@ a{
         display: none;
         visibility: hidden;
     }
-    #work{
+    .work{
         padding-top:10%;
     }
     #write{
@@ -257,6 +257,7 @@ a{
     nav.white ul li a {
         line-height: 9vh;
     }
+    
     
 }
 #foot{
@@ -335,7 +336,7 @@ a{
         font-size: medium;
         height: 300px;
     }
-    #work{
+    .work{
         padding-top:18%;
     }
     body{
@@ -442,4 +443,39 @@ button:hover{
 }
 .conlink a{
     margin-left:15px;
+}
+.work section{
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 4%;
+}
+.left{
+    width: 40vw;
+    left: 0;
+    padding: 0% 3%;
+    margin: 0vh 2vw;
+    text-align: left !important;
+}
+.right{
+    width: 40vw;
+    right: 0;
+    padding: 0% 3%;
+    margin: 0vh 2vw;
+    text-align: left !important;
+}
+@media screen and (max-width: 640px){
+    .work section{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .left{
+        width: 75vw;
+        margin: 2vh 2vw;
+        align-self: center !important;
+    }
+    .right{
+        width: 75vw;
+        margin: 2vh 2vw;
+        align-self: center !important;
+    }
 }

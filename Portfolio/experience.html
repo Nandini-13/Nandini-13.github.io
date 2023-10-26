@@ -41,15 +41,44 @@
         }
         window.addEventListener("scroll", hideMenu);
     </script>
+    <style>
+      strong{
+        padding: 10px; 
+        border: 1px solid rgb(0, 0, 0); 
+        border-radius: 3px;
+      }
+      strong:hover{
+        background-color: black;
+        color: white !important;
+        transition: 0.6s;
+      }
+      .card-header{
+        font-size: 125%;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .card-title{
+        text-decoration: underline;
+      }
+      .card{
+        width: 40vw ;
+        margin: 2vh 4vw;
+      }
+      @media screen and (max-width: 640px){
+        .card{
+          width: 75vw;
+          align-self: center;
+        }
+      }
+    </style>
 <title>G.Nandini | Personal Website</title>
 </head>
 <body>
 <div id="loading"></div>
     <!-- NAVBAR -->
     <nav class="white">
-        <h1 class="logo"> <a href="index.html">
+        <h1 class="logo"> <a href="index.html"><b>
           G.NANDINI
-        </a>
+        </b></a>
         </h1>
         <input type="checkbox" id="check">
       <label for="check" >
@@ -72,33 +101,49 @@
         <h1 style="color: rgb(22,22,22);font-size: 300%;">
         Experience
         </h1>
-    <section>
-        <div class="card" style="margin: 2vh 4vw;">
-            <div class="card-header">
-              Featured
-            </div>
+    <section style="padding-top: 3%;">
+        <div class="card" data-aos="fade-up">
+            <b><div class="card-header">
+              New York Academy of Sciences
+            </div></b>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Mentee</h5>
+              <p class="card-text">
+                Participated in discussions revolving around ethical thinking, public
+                speaking, and researching material that is important to communicate to
+                the wider public regarding science and STEM subjects.
+              </p>
+              <p>
+                <i>JAN 2022 - DEC 2022</i>
+              </p>
+              
             </div>
           </div>
-          <div class="card" style="margin: 2vh 4vw;">
-            <div class="card-header">
-              Featured
-            </div>
+          <div class="card" data-aos="fade-up">
+            <b><div class="card-header">
+              XINO 
+            </div></b>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Executive Member</h5>
+              <p class="card-text">
+                Worked with a team and developed web applications for Hackathons and learned how to work and collaborate in a team under a strict time deadline.
+                Implemented leadership and management skills during the tenure.
+              
+              </p>
+              <p>
+                <i>AUG 2020 - FEB 2022</i>
+              </p>
             </div>
           </div>
+          
     </section>
     <h2>Interested in hiring?</h2><br>
-    <strong style="padding: 10px; border: 1px solid rgb(0, 0, 0); border-radius: 3px;">   
+    
     <a href="Resume.pdf" target="_blank">
+      <strong>   
        View Resume
-    </a></strong>
+      </strong>
+    </a>
     </center>
     </div>
 <!-- SKILLS SECTION ENDS -->

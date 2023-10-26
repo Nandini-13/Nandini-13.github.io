@@ -15,7 +15,6 @@ h4,
 h5{
     font-family: 'Montserrat', sans-serif;
 }
-
 nav {
     position: fixed;
     top: 0;
@@ -101,7 +100,6 @@ nav.white #btn{
     color: black;
     
 }
-
 #home{
     
     background-image: url(me2.jpg);
@@ -189,8 +187,7 @@ a{
         display: block !important;
         text-align: center;
         transition: all .5s;
-    }
-    
+    }    
     nav ul li a {
         color: black;
         font-size: x-large;
@@ -218,7 +215,6 @@ a{
     #check:checked ~ label #cancel{
         display: block;
     }
-
     #go {
         display: none;
         visibility: hidden;
@@ -232,7 +228,6 @@ a{
         font-size: 100%;
     }
 }
-
 @media screen and (max-width:600px){
     nav ul{
         position: fixed;
@@ -257,8 +252,6 @@ a{
     nav.white ul li a {
         line-height: 9vh;
     }
-    
-    
 }
 #foot{
     background-color: black;
@@ -349,14 +342,12 @@ a{
         font-size: larger;        
     }
 }  
-
 .swiper-button-next{
     color: black;
     font-weight: 900;
     padding: 1%;
     box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
     background-color: rgb(255, 255, 255);
-
 }
 .swiper-button-prev{
     color: black;
@@ -364,7 +355,6 @@ a{
     padding: 1%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
-
 }
 .swiper-pagination{
     cursor: pointer;
@@ -373,7 +363,6 @@ a{
     box-shadow: 0px 0px 16px 3px rgb(168, 168, 168);
     top: 1px;
 }
-
 #loading {
     position: fixed;
     width: 100%;
@@ -381,7 +370,6 @@ a{
     background: #212020 url('spinner.svg') no-repeat center center;
     z-index: 9999;
 }
-
 input,textarea,button {
     font-family: 'Poppins', sans-serif;
     margin-top: 12px;
@@ -391,7 +379,6 @@ input,textarea,button {
     padding: 12px 12px;
     outline: none !important;
 }
-
 button{
     box-shadow: inset 0 0 0 0 white;
     -webkit-transition: ease-out 0.4s;
@@ -410,7 +397,6 @@ button:hover{
     box-shadow: inset 0 0 0 30px white;
 
 }
-
 .calcu{
     width: calc(50% - 30px);
 }
@@ -479,3 +465,41 @@ button:hover{
         align-self: center !important;
     }
 }
+.card-header{
+    background-color: #a5e0db;
+    border-radius: 6px;
+    border: 1px solid #a5e0db;
+    height: max-content;
+    padding: 2% 0;
+  }
+  .card-body{
+    border: 1px solid #a5e0db;
+    border-radius: 6px;
+    padding: 2% 1%;
+  }
+  .card-title{
+    text-decoration: underline;
+    font-size: 105%;
+  }
+  .card{
+    width: 40vw ;
+    margin: 2vh 4vw;
+    height: min-content;
+    text-align: center !important;
+  }
+  .sep{
+    display: flex; 
+    flex-direction: row ;
+    margin-bottom: 3%;
+  }
+  @media screen and (max-width: 1010px){
+    .sep{
+      display: flex;
+      flex-direction: column !important;
+    }
+    .card{
+      width: 75vw;
+      align-self: center;
+    }
+  }
+  

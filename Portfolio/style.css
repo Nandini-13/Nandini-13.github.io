@@ -130,30 +130,6 @@ nav.white #btn{
 .heads h2 span {
     color: #48cae4;
 }
-#about{
-  height: max-content;
-  background-color: white;
-  width: 100%;
-  display: inline-block;
-  padding: 4%;
-}
-#pic {
-    padding: 0 !important;
-    margin: 4%;
-    margin-left: 1% !important;
-    display: inline-block;
-   
-}
-#write {
-    width: 50vw;
-    font-size: 110%;
-    padding: 1%;
-    display: inline-block;
-    text-align: left;
-}
-#write h2{
-    color: #0c3196;
-}
 a{
     text-decoration: none !important;
     color: initial;
@@ -285,19 +261,6 @@ a{
         padding-top: 4%;    
         padding-bottom: 4%; 
     }
-}
-#go {
-    background-color: white;
-    padding-left: 0.7%;
-    padding-right: 0.7%;
-    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.4);
-    z-index: 100;
-    position: fixed;
-    border-radius: 10%;
-    width: fit-content;
-    height: min-content;
-    bottom: 1vh;
-    right: 1vw;
 }
 .swiper-container {
     width: 100%;
